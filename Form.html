@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Form.css" />
+    <title>Production Order Form</title>
+  </head>
+  <body>
+    <form id="form" onsubmit="return validateForm()" method="get" action="Forms.html">
+      <!-- Heading -->
+      <div>
+        <h1 class="formHeader">Production Order Form</h1>
+      </div>
+      <!-- Date -->
+       <div>
+      <div>
+        <label for="dob">Date of Deadline:</label>
+      </div>
+        <input type="date" id="dob" name="dob" class="dob"/>
+        <div>
+        <span id="dobError"> </span>
+    </div>
+      </div>
+    </div>  
+      <!-- Campaign Title  -->
+      <div>
+        <label for="campaignTitle">
+            Campaign Title:
+        </label>
+    </div>
+    <div>
+        <input type="text" name="campaignTitle" id="campaignTitle" class="campaignTitle"/>
+    <div>
+        <span id="campaignTitleError"></span>
+    </div>
+    </div>   
+      <!-- Choose the Media Checkbox  -->
+      <div>
+        <label  for="chooseThemedia" >Choose the Media:</label>
+    </div>
+    <div  class="advertisingCheckbox">
+        <div class="advertisingCheckboxFirst">
+            <div>
+            <input type="radio" name="advertisingOption" value="radio" id="radio">
+            Radio    
+            </div>
+        <div>
+            <input type="radio" name="advertisingOption" value="television" id="television">
+            Television
+    </div>      
+        <div>
+            <input type="radio" name="advertisingOption" value="videoNarration" id="video">
+          Video Narration
+    </div>
+    </div>
+    <div class="advertisingCheckboxSecond"></div>
+    <div>
+            <input type="radio" name="advertisingOption" value="phoneMessageOnHold" id="phone">
+     Phone Message on Hold 
+    </div>
+    <div>
+            <input type="radio" name="advertisingOption" value="internetAdCampaign" id="internet">
+            Internet Ad Campaign
+    </div>
+   
+    </div>
+    
+
+    <div class="clear">
+
+</div> 
+<div>
+    <span id="advertisingError"></span>
+</div>    
+      <!-- Choose the length -->
+      <div>
+        <label for="chooseLength">Choose the Length:</label>
+      </div>
+
+      <div class="chooseLength" id="chooseLength">
+        <div class="chooseLengthFirst">
+          <div>
+            <input
+              type="radio"
+              name="chooseLengthOption"
+              value="long"
+              id="narration"
+            />
+            Long Form Narration
+          </div>
+          <div>
+            <input
+              type="radio"
+              name="chooseLengthOption"
+              value="sixtySeconds"
+              id="sixtySeconds"
+            />
+            60 Seconds
+          </div>
+        </div>
+        <div class="chooselengthSecond">
+          <div>
+            <input
+              type="radio"
+              name="chooseLengthOption"
+              value="thirtySeconds"
+              id="thirtySeconds"
+            />
+            30 Seconds
+          </div>
+          <div>
+            <input
+              type="radio"
+              name="chooseLengthOption"
+              value="fifteenSeconds"
+              id="fifteenSeconds"
+            />
+            15 Seconds
+          </div>
+        </div>
+      </div>
+      <div>
+        <span id="chooseLengthError"></span>
+      </div>  
+
+      <!-- Voice Talents -->
+       <div>
+            <label  for="voiceTalents">How many voice talents are needed?</label>
+        </div>
+
+        <div class="voiceTalent"  id="voiceTalent">
+
+            <div class="voiceTalentFirst" >
+                
+                    <div>
+                        <input type="radio" name="voiceTalentOption" value="voiceOne" id="voiceOne">
+                       1 
+                        </div>
+                        <div>
+                            <input type="radio" name="voiceTalentOption" value="voiceTwo" id="voiceTwo" >
+                           2
+                        </div>
+                </div>
+                <div class="voiceTalentSecond">
+                    <div>
+                        <input type="radio" name="voiceTalentOption" value="voiceThree" id="voiceThree">
+                        3
+                  </div> 
+                    <div>
+                        <input type="radio" name="voiceTalentOption" value="voiceFour" id="voiceFour">
+                        4
+                    </div>  
+                </div>  
+                <div class="clear">
+        
+                </div>      
+        </div>
+        <div>
+            <span id="voiceTalentOptionError"></span>
+          </div> 
+      <!-- SpecialElements Text Area -->
+      <div>
+            <label  for="specialElements">Special elements/jingles/beds/theme</label>
+        </div>
+        <div>
+            <textarea id="userMessage" name="userMessage" ></textarea>
+        </div> 
+
+        <div>
+            <span id="userMessageError"></span>
+          </div>  
+      <!-- Final Approval Required -->
+      <div>
+        <label  for="finalApproval">Final Spot Approval Required?</label>
+    </div>
+    <div class="finalApproval" id="finalApproval">
+                
+        <div>
+            <input type="radio" name="finalApproval" value="finalApprovalYes" id="finalApprovalYes" >
+        Yes
+            </div>
+            <div>
+                <input type="radio" name="finalApproval" value="finalApprovalNo" id="finalApprovalNo" >
+               No
+            </div>
+    </div> 
+    <div>
+        <span id="finalApprovalError"></span>
+      </div>  
+      <!-- Additional Spot Traffic Info -->
+      <div>
+        <label for="additionalInfo">Additional Spot/Traffic Info:</label>
+      </div>
+      <div>
+        <textarea id="additionalInfoMsg" name="additionalInfoMsg"></textarea>
+      </div>
+
+      <div>
+        <span id="additionalInfoMsgError"></span>
+      </div> 
+
+      <!-- Contact Details Heading -->
+      <!-- Name -->
+
+      <div>
+        <h1 class="contact">Please tell us how to get in touch with you</h1>
+      </div>
+      <div>
+        <label for="name">Name:</label>
+      </div>
+      <div class="nameList">
+        <input
+          type="text"
+          id="firstName"
+          name="firstName"
+          placeholder="First"
+        />
+        <input type="text" id="lastName" name="lastName" placeholder="Second" />
+      </div>
+      <div>
+        <span id="nameListMsgError"></span>
+      </div>
+
+      <!-- Phonenumber -->
+
+      <div>
+            <label  for="phoneNumber">Phone:</label>
+        </div>
+        <div class="phoneNumber"> 
+        
+            <input type="text" id="phoneNumber" name="phoneNumber" placeholder="#### #### ####" >
+            <div>
+                <span id="phoneError"></span>
+              </div>
+        </div> 
+        
+
+      <!-- Email -->
+
+      <div>
+            <label  for="Email">Email:</label>
+        </div>
+        <div class="emailId"> 
+            <input type="email" id="emailId" name="emailId"  >
+        </div> 
+
+        <div>
+            <span id="emailError"></span>
+          </div>
+      <!-- verification -->
+
+      <div>
+    <label  for="verfication">verfication:</label>
+</div>
+<div class="verfications">
+<div class="imgVerification">
+    <img src="./random.png" alt="Image">
+</div>
+<div>
+    <input type="text" id="verfication" name="verfication"  >
+</div>
+</div> 
+<div>
+    <span id="verficationError"></span>
+  </div>
+
+      <!-- Submit Button -->
+
+      <div>
+        <button type="submit" id="orderButton">Order</button>
+      </div>
+    </form>
+  </body>
+</html>
+<script>
+  function validateForm() {
+    var validation = true;
+
+    var dateInput = document.getElementById("dob").value;
+    var dobError = document.getElementById("dobError");
+
+    var campaignTitle = document.getElementById("campaignTitle").value;
+    var campaignTitleError = document.getElementById("campaignTitleError");
+
+    var mediaOptions = document.getElementsByName("advertisingOption");
+    var advertisingError = document.getElementById("advertisingError");
+
+    var chooseOptions = document.getElementsByName("chooseLengthOption");
+    var chooseError = document.getElementById("chooseLengthError");
+
+    var voiceOptions = document.getElementsByName("voiceTalentOption");
+    var voiceError = document.getElementById("voiceTalentOptionError");
+
+    var userInput = document.getElementById("userMessage").value;
+    var userError = document.getElementById("userMessageError");
+
+    var finalApprovalOption = document.getElementsByName("finalApproval");
+    var finalApprovalError = document.getElementById("finalApprovalError");
+
+    var additionalInfoOption =
+      document.getElementById("additionalInfoMsg").value;
+    var additionalInfoError = document.getElementById("additionalInfoMsgError");
+
+    var firstNames = document.getElementById("firstName").value;
+    var lastNames = document.getElementById("lastName").value;
+    var nameListError = document.getElementById("nameListMsgError");
+
+    var phoneNumber = document.getElementById("phoneNumber").value
+    var phonesError = document.getElementById("phoneError")
+
+    var emailsId = document.getElementById("emailId").value
+    var emailsError = document.getElementById("emailError")
+
+    var verfications = document.getElementById("verfication").value
+    var verficationErrors = document.getElementById("verficationError")
+
+    if (!dateInput) {
+      dobError.innerHTML = "Please enter the Date of Deadline.";
+      validation = false;
+    } else {
+      dobError.innerHTML = "";
+    }
+
+    if (!campaignTitle) {
+      campaignTitleError.innerHTML = "Please enter the campaignTitle";
+      validation = false;
+    } else {
+      campaignTitleError.innerHTML = "";
+    }
+
+    var mediaSelected = false;
+    for (var i = 0; i < mediaOptions.length; i++) {
+      if (mediaOptions[i].checked) {
+        mediaSelected = true;
+        break;
+      }
+    }
+    if (!mediaSelected) {
+      advertisingError.innerHTML = "Please choose any advertising option";
+      validation = false;
+    } else {
+      advertisingError.innerHTML = "";
+    }
+
+    var chooseSelected = false;
+    for (var i = 0; i < chooseOptions.length; i++) {
+      if (chooseOptions[i].checked) {
+        chooseSelected = true;
+        break;
+      }
+    }
+
+    if (!chooseSelected) {
+      chooseError.innerHTML = "Please choose any length option";
+      validation = false;
+    } else {
+      chooseError.innerHTML = "";
+    }
+
+    var voiceSelected = false;
+    for (var i = 0; i < voiceOptions.length; i++) {
+      if (voiceOptions[i].checked) {
+        voiceSelected = true;
+        break;
+      }
+    }
+
+    if (!voiceSelected) {
+      voiceError.innerHTML = "Please choose any length option";
+      validation = false;
+    } else {
+      chooseError.innerHTML = "";
+    }
+    if (!userInput) {
+      userError.innerHTML = "Please enter the Some Details.";
+      validation = false;
+    } else {
+      userError.innerHTML = "";
+    }
+
+    var finalApprovalSelected = false;
+    for (var i = 0; i < finalApprovalOption.length; i++) {
+      if (finalApprovalOption[i].checked) {
+        finalApprovalSelected = true;
+        break;
+      }
+    }
+
+    if (!finalApprovalSelected) {
+      finalApprovalError.innerHTML = "Please choose any  option";
+      validation = false;
+    } else {
+      chooseError.innerHTML = "";
+    }
+    if (!additionalInfoOption) {
+      additionalInfoError.innerHTML = "Please enter the Date of Deadline.";
+      validation = false;
+    } else {
+      additionalInfoError.innerHTML = "";
+    }
+    if (!firstNames || !lastNames) {
+      nameListError.innerHTML = "Please Enter Your Name.";
+      validation = false;
+    } else {
+      nameListError.innerHTML = "";
+    }
+    var phonePattern = /^\d{10}$/;
+    if (!phoneNumber) {
+        phonesError.innerHTML = "Please enter your valid number";
+      validation = false;
+    } if(!phonePattern.test(phoneNumber)) {
+        phonesError.innerHTML = "Please enter your valid number";
+      validation = false;
+       
+    }
+    else{
+        phonesError.innerHTML = "";
+    }
+    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailsId) {
+        emailsError.innerHTML = "Please enter your valid email";
+      validation = false;
+    } if(!emailPattern .test(emailsId)) {
+        emailsError.innerHTML = "Please enter your valid email";
+      validation = false;
+       
+    }
+    else{
+        emailsError.innerHTML = "";
+    }
+
+  
+    
+    if (!verfications) {
+        verficationErrors.innerHTML = "Please enter the correct verification code.";
+      validation = false;
+    } else {
+        verficationErrors.innerHTML = "";
+    }
+
+  
+
+    return validation;
+  }
+</script>

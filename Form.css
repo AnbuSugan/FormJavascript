@@ -1,0 +1,341 @@
+.formHeader {
+  margin-left: 30%;
+  color: rgb(87, 113, 128);
+  font-size: 2em;
+}
+#form {
+  box-sizing: border-box;
+  background-color: #dae6ebcc;
+  width: 1300px;
+  margin-left: 30px;
+  height: 1600px;
+}
+
+label[for="dob"] {
+  padding-left: 20%;
+  font-size: 25px;
+  margin-bottom: 10px;
+  padding-top: 10%;
+}
+
+#dob {
+  width: 800px;
+  padding: 18px;
+  margin-left: 20%;
+  border-radius: 10px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2em;
+  box-sizing: border-box;
+}
+.dob {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#dobError {
+  color: brown;
+  font-size: x-small;
+  margin-left: 22%;
+}
+
+label[for="campaignTitle"] {
+  padding-left: 20%;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+#campaignTitle {
+  width: 800px;
+  padding: 18px;
+  margin-left: 20%;
+  border-radius: 10px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2em;
+  box-sizing: border-box;
+}
+#campaignTitleError {
+  color: brown;
+  font-size: x-small;
+  margin-left: 22%;
+}
+.campaignTitle {
+  margin-top: 8px;
+  margin-bottom: 13px;
+}
+label[for="chooseThemedia"] {
+  padding-left: 20%;
+  font-size: 25px;
+}
+.chooseThemedia {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.advertisingCheckbox {
+  padding-left: 20%;
+  width: 800px;
+  font-family: Sura;
+  font-size: 20px;
+  color: #577180;
+  font-style: normal;
+  line-height: 1.2em;
+  margin-bottom: 10px;
+}
+.advertisingCheckboxFirst {
+  float: left;
+  width: 400px;
+}
+.advertisingCheckboxSecond {
+  float: right;
+  width: 400px;
+}
+#advertisingError {
+  color: brown;
+  font-size: x-small;
+  margin-left: 22%;
+}
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+label[for="chooseLength"] {
+  padding-left: 20%;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.clear {
+  clear: both;
+}
+
+.chooseLength {
+  padding-left: 20%;
+  width: 800px;
+  font-family: Sura;
+  font-size: 20px;
+  color: #577180;
+  font-style: normal;
+  width: 46%;
+  margin-bottom: 2%;
+}
+#chooseLength {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#chooseLengthError {
+  color: brown;
+  font-size: x-small;
+  margin-left: 22%;
+}
+label[for="voiceTalents"] {
+  padding-left: 20%;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.voiceTalent {
+  padding-left: 20%;
+  width: 800px;
+  font-family: Sura;
+  font-size: 20px;
+  color: #577180;
+  font-style: normal;
+  width: 70%;
+}
+#voiceTalent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#voiceTalentOptionError {
+  color: brown;
+  font-size: x-small;
+  margin-left: 22%;
+}
+label[for="specialElements"] {
+  padding-left: 20%;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+#userMessage {
+  width: 800px;
+  padding: 36px;
+  margin-left: 20%;
+  border-radius: 10px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2em;
+  box-sizing: border-box;
+  margin-bottom: 1%;
+}
+#userMessageError {
+  color: brown;
+  font-size: x-small;
+  margin-left: 22%;
+}
+label[for="finalApproval"] {
+  padding-left: 20%;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.finalApproval {
+  padding-left: 20%;
+  width: 800px;
+  font-family: Sura;
+  font-size: 20px;
+  color: #577180;
+  font-style: normal;
+  width: 25%;
+}
+#finalApprovalError {
+  color: brown;
+  font-size: x-small;
+  margin-left: 22%;
+}
+#finalApproval {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+label[for="additionalInfo"] {
+  padding-left: 20%;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+#additionalInfoMsg {
+  width: 800px;
+  padding: 36px;
+  margin-left: 20%;
+  border-radius: 10px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2em;
+  box-sizing: border-box;
+}
+#additionalInfoMsgError {
+  color: brown;
+  font-size: x-small;
+  margin-left: 22%;
+}
+
+.contact {
+  margin-left: 25%;
+  color: rgb(87, 113, 128);
+  font-size: 2em;
+}
+label[for="name"] {
+  padding-left: 20%;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.nameList {
+  width: 800px;
+  margin-left: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2em;
+  box-sizing: border-box;
+  margin-bottom: 2%;
+}
+#firstName {
+  width: 340px;
+  padding: 20px;
+  border-radius: 15px;
+}
+#lastName {
+  width: 340px;
+  padding: 20px;
+  border-radius: 15px;
+}
+#nameListMsgError {
+  color: brown;
+  font-size: x-small;
+  margin-left: 22%;
+}
+label[for="phoneNumber"] {
+  padding-left: 20%;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+#phoneNumber {
+  width: 800px;
+  margin-left: 20%;
+  padding: 18px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2em;
+  box-sizing: border-box;
+  border-radius: 15px;
+  margin-bottom: 2%;
+}
+#phoneError {
+  color: brown;
+  font-size: x-small;
+  margin-left: 22%;
+}
+label[for="Email"] {
+  padding-left: 20%;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+#emailId {
+  width: 800px;
+  margin-left: 20%;
+  padding: 18px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2em;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+#emailError {
+  color: brown;
+  font-size: x-small;
+  margin-left: 22%;
+}
+label[for="verfication"] {
+  padding-left: 20%;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.verfications {
+  width: 800px;
+  margin-left: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2em;
+  box-sizing: border-box;
+}
+#verfication {
+  width: 648px;
+
+  padding: 18px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2em;
+  box-sizing: border-box;
+  border-radius: 15px;
+  margin-bottom: 2%;
+}
+#verficationError {
+  color: brown;
+  font-size: x-small;
+  margin-left: 35%;
+}
+
+#orderButton {
+  padding: 20px;
+  border-radius: 20px;
+  margin-left: 35%;
+  margin-top: 10px;
+  width: 15%;
+}
